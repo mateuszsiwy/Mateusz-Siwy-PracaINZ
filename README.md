@@ -43,10 +43,15 @@ for res in resolutions:
 ```
 
 ### Obliczenie DVH dla ROI o ID 3 i zapisanie wykresu do katalogu "output":
+```shell
 python -m dvh_analyzer.cli --path "data/dicom/patient" --roi-id 3 --dvh --output "./output_dvh"
-
+```
 ### Obliczenie DVH dla ROI o ID 3, interpolacja do 1.25mm i zapisanie wykresu do katalogu "output":
+```shell
 python -m dvh_analyzer.cli --path "data/dicom/patient" --roi-id 3 --dvh --output "./output_dvh" --interpolation-resolution 1.25
+```
 
 ### Wyświetlenie dostępnych ROI:
+```shell
 python dvh_analyzer/cli.py --path data/dicom/patient --list-rois
+```
