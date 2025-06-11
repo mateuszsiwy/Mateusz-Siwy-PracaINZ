@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define/>
+
+  <materials>
+    <isotope N="12" Z="6" name="C120x1078140">
+      <atom unit="g/mole" value="12"/>
+    </isotope>
+    <isotope N="13" Z="6" name="C130x1078190">
+      <atom unit="g/mole" value="13.0034"/>
+    </isotope>
+    <element name="C0x1078200">
+      <fraction n="0.9893" ref="C120x1078140"/>
+      <fraction n="0.0107" ref="C130x1078190"/>
+    </element>
+    <isotope N="1" Z="1" name="H10x1077540">
+      <atom unit="g/mole" value="1.00782503081372"/>
+    </isotope>
+    <isotope N="2" Z="1" name="H20x10775b0">
+      <atom unit="g/mole" value="2.01410199966617"/>
+    </isotope>
+    <element name="H0x10776b0">
+      <fraction n="0.999885" ref="H10x1077540"/>
+      <fraction n="0.000115" ref="H20x10775b0"/>
+    </element>
+    <isotope N="16" Z="8" name="O160x1078700">
+      <atom unit="g/mole" value="15.9949"/>
+    </isotope>
+    <isotope N="17" Z="8" name="O170x1078750">
+      <atom unit="g/mole" value="16.9991"/>
+    </isotope>
+    <isotope N="18" Z="8" name="O180x10787c0">
+      <atom unit="g/mole" value="17.9992"/>
+    </isotope>
+    <element name="O0x1078840">
+      <fraction n="0.99757" ref="O160x1078700"/>
+      <fraction n="0.00038" ref="O170x1078750"/>
+      <fraction n="0.00205" ref="O180x10787c0"/>
+    </element>
+    <material name="PMMA0x107f9b0" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="68.6088807971963"/>
+      <D unit="g/cm3" value="1.19"/>
+      <fraction n="0.599841070879962" ref="C0x1078200"/>
+      <fraction n="0.0805418407442843" ref="H0x10776b0"/>
+      <fraction n="0.319617088375753" ref="O0x1078840"/>
+    </material>
+    <material name="G4_Galactic0x1077410" state="gas">
+      <T unit="K" value="2.73"/>
+      <P unit="pascal" value="3e-18"/>
+      <MEE unit="eV" value="21.8"/>
+      <D unit="g/cm3" value="1e-25"/>
+      <fraction n="1" ref="H0x10776b0"/>
+    </material>
+  </materials>
+
+  <solids>
+    <box lunit="mm" name="D3D_1_0_0Box0x125b430" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_0Box0x125b730" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_1Box0x125b9d0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_1Box0x125bd10" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_1Box0x125bff0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_1Box0x125c330" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_2Box0x125c5f0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_2Box0x125c8d0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_2Box0x125cc40" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_2Box0x125cfb0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_3Box0x125d290" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_3Box0x125d570" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_3Box0x125d850" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_3Box0x125db70" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_4Box0x125de10" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_4Box0x125e0f0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_0Box0x125eaf0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_0Box0x125ee70" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_1Box0x125f160" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_1Box0x125f470" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_1Box0x125f790" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_1Box0x125fa50" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_2Box0x125fd30" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_2Box0x1260010" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_2Box0x12603c0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_2Box0x1260660" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_3Box0x1260940" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_3Box0x1260c20" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_3Box0x1260f40" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_3Box0x12611e0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_4Box0x12614c0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_4Box0x12617e0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_0Box0x1262200" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_0Box0x1262680" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_1Box0x12628c0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_1Box0x1262bd0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_1Box0x1262f00" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_1Box0x12631b0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_2Box0x1263490" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_2Box0x1263770" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_2Box0x1263af0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_2Box0x1263e10" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_3Box0x12640f0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_3Box0x12643d0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_3Box0x12646b0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_3Box0x1264990" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_4Box0x1264c70" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_4Box0x1264f10" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_0Box0x1265980" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_0Box0x1265c60" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_1Box0x1265f50" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_1Box0x1266260" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_1Box0x1266580" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_1Box0x1266830" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_2Box0x1266b20" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_2Box0x1266e40" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_2Box0x12671b0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_2Box0x1267490" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_3Box0x1267730" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_1_0_3Box0x1267a10" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_3Box0x1267d30" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_3_0_3Box0x1268010" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_0_0_4Box0x12682f0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="D3D_2_0_4Box0x12685d0" x="10.4" y="10.4" z="10.4"/>
+    <box lunit="mm" name="worldG0x124f4b0" x="6000" y="6000" z="6000"/>
+  </solids>
+
+  <structure>
+    <volume name="D3D_1_0_0LV0x125b4e0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_0Box0x125b430"/>
+    </volume>
+    <volume name="D3D_3_0_0LV0x125b7e0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_0Box0x125b730"/>
+    </volume>
+    <volume name="D3D_0_0_1LV0x125ba80">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_1Box0x125b9d0"/>
+    </volume>
+    <volume name="D3D_1_0_1LV0x125bdc0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_1Box0x125bd10"/>
+    </volume>
+    <volume name="D3D_2_0_1LV0x125c0a0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_1Box0x125bff0"/>
+    </volume>
+    <volume name="D3D_3_0_1LV0x125c3e0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_1Box0x125c330"/>
+    </volume>
+    <volume name="D3D_0_0_2LV0x125c6a0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_2Box0x125c5f0"/>
+    </volume>
+    <volume name="D3D_1_0_2LV0x125c980">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_2Box0x125c8d0"/>
+    </volume>
+    <volume name="D3D_2_0_2LV0x125ccf0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_2Box0x125cc40"/>
+    </volume>
+    <volume name="D3D_3_0_2LV0x125d060">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_2Box0x125cfb0"/>
+    </volume>
+    <volume name="D3D_0_0_3LV0x125d340">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_3Box0x125d290"/>
+    </volume>
+    <volume name="D3D_1_0_3LV0x125d620">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_3Box0x125d570"/>
+    </volume>
+    <volume name="D3D_2_0_3LV0x125d900">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_3Box0x125d850"/>
+    </volume>
+    <volume name="D3D_3_0_3LV0x125dc20">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_3Box0x125db70"/>
+    </volume>
+    <volume name="D3D_0_0_4LV0x125dec0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_4Box0x125de10"/>
+    </volume>
+    <volume name="D3D_2_0_4LV0x125e1a0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_4Box0x125e0f0"/>
+    </volume>
+    <volume name="D3D_1_0_0LV0x125eba0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_0Box0x125eaf0"/>
+    </volume>
+    <volume name="D3D_3_0_0LV0x125ef20">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_0Box0x125ee70"/>
+    </volume>
+    <volume name="D3D_0_0_1LV0x125f210">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_1Box0x125f160"/>
+    </volume>
+    <volume name="D3D_1_0_1LV0x125f520">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_1Box0x125f470"/>
+    </volume>
+    <volume name="D3D_2_0_1LV0x125f840">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_1Box0x125f790"/>
+    </volume>
+    <volume name="D3D_3_0_1LV0x125fb00">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_1Box0x125fa50"/>
+    </volume>
+    <volume name="D3D_0_0_2LV0x125fde0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_2Box0x125fd30"/>
+    </volume>
+    <volume name="D3D_1_0_2LV0x12600c0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_2Box0x1260010"/>
+    </volume>
+    <volume name="D3D_2_0_2LV0x1260470">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_2Box0x12603c0"/>
+    </volume>
+    <volume name="D3D_3_0_2LV0x1260710">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_2Box0x1260660"/>
+    </volume>
+    <volume name="D3D_0_0_3LV0x12609f0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_3Box0x1260940"/>
+    </volume>
+    <volume name="D3D_1_0_3LV0x1260cd0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_3Box0x1260c20"/>
+    </volume>
+    <volume name="D3D_2_0_3LV0x1260ff0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_3Box0x1260f40"/>
+    </volume>
+    <volume name="D3D_3_0_3LV0x1261290">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_3Box0x12611e0"/>
+    </volume>
+    <volume name="D3D_0_0_4LV0x1261570">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_4Box0x12614c0"/>
+    </volume>
+    <volume name="D3D_2_0_4LV0x1261890">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_4Box0x12617e0"/>
+    </volume>
+    <volume name="D3D_1_0_0LV0x12622b0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_0Box0x1262200"/>
+    </volume>
+    <volume name="D3D_3_0_0LV0x1262730">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_0Box0x1262680"/>
+    </volume>
+    <volume name="D3D_0_0_1LV0x1262970">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_1Box0x12628c0"/>
+    </volume>
+    <volume name="D3D_1_0_1LV0x1262c80">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_1Box0x1262bd0"/>
+    </volume>
+    <volume name="D3D_2_0_1LV0x1262fb0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_1Box0x1262f00"/>
+    </volume>
+    <volume name="D3D_3_0_1LV0x1263260">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_1Box0x12631b0"/>
+    </volume>
+    <volume name="D3D_0_0_2LV0x1263540">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_2Box0x1263490"/>
+    </volume>
+    <volume name="D3D_1_0_2LV0x1263820">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_2Box0x1263770"/>
+    </volume>
+    <volume name="D3D_2_0_2LV0x1263ba0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_2Box0x1263af0"/>
+    </volume>
+    <volume name="D3D_3_0_2LV0x1263ec0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_2Box0x1263e10"/>
+    </volume>
+    <volume name="D3D_0_0_3LV0x12641a0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_3Box0x12640f0"/>
+    </volume>
+    <volume name="D3D_1_0_3LV0x1264480">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_3Box0x12643d0"/>
+    </volume>
+    <volume name="D3D_2_0_3LV0x1264760">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_3Box0x12646b0"/>
+    </volume>
+    <volume name="D3D_3_0_3LV0x1264a40">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_3Box0x1264990"/>
+    </volume>
+    <volume name="D3D_0_0_4LV0x1264d20">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_4Box0x1264c70"/>
+    </volume>
+    <volume name="D3D_2_0_4LV0x1264fc0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_4Box0x1264f10"/>
+    </volume>
+    <volume name="D3D_1_0_0LV0x1265a30">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_0Box0x1265980"/>
+    </volume>
+    <volume name="D3D_3_0_0LV0x1265d10">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_0Box0x1265c60"/>
+    </volume>
+    <volume name="D3D_0_0_1LV0x1266000">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_1Box0x1265f50"/>
+    </volume>
+    <volume name="D3D_1_0_1LV0x1266310">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_1Box0x1266260"/>
+    </volume>
+    <volume name="D3D_2_0_1LV0x1266630">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_1Box0x1266580"/>
+    </volume>
+    <volume name="D3D_3_0_1LV0x12668e0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_1Box0x1266830"/>
+    </volume>
+    <volume name="D3D_0_0_2LV0x1266bd0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_2Box0x1266b20"/>
+    </volume>
+    <volume name="D3D_1_0_2LV0x1266ef0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_2Box0x1266e40"/>
+    </volume>
+    <volume name="D3D_2_0_2LV0x1267260">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_2Box0x12671b0"/>
+    </volume>
+    <volume name="D3D_3_0_2LV0x1267540">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_2Box0x1267490"/>
+    </volume>
+    <volume name="D3D_0_0_3LV0x12677e0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_3Box0x1267730"/>
+    </volume>
+    <volume name="D3D_1_0_3LV0x1267ac0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_1_0_3Box0x1267a10"/>
+    </volume>
+    <volume name="D3D_2_0_3LV0x1267de0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_3Box0x1267d30"/>
+    </volume>
+    <volume name="D3D_3_0_3LV0x12680c0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_3_0_3Box0x1268010"/>
+    </volume>
+    <volume name="D3D_0_0_4LV0x12683a0">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_0_0_4Box0x12682f0"/>
+    </volume>
+    <volume name="D3D_2_0_4LV0x1268680">
+      <materialref ref="PMMA0x107f9b0"/>
+      <solidref ref="D3D_2_0_4Box0x12685d0"/>
+    </volume>
+    <volume name="worldL0x124f560">
+      <materialref ref="G4_Galactic0x1077410"/>
+      <solidref ref="worldG0x124f4b0"/>
+      <physvol name="D3D_1_0_0PV0x125b590">
+        <volumeref ref="D3D_1_0_0LV0x125b4e0"/>
+        <position name="D3D_1_0_0PV0x125b590_pos" unit="mm" x="-11.4" y="-22.8" z="-5.7"/>
+      </physvol>
+      <physvol name="D3D_3_0_0PV0x125b890">
+        <volumeref ref="D3D_3_0_0LV0x125b7e0"/>
+        <position name="D3D_3_0_0PV0x125b890_pos" unit="mm" x="11.4" y="-22.8" z="-5.7"/>
+      </physvol>
+      <physvol name="D3D_0_0_1PV0x125bb70">
+        <volumeref ref="D3D_0_0_1LV0x125ba80"/>
+        <position name="D3D_0_0_1PV0x125bb70_pos" unit="mm" x="-28.5" y="-22.8" z="-17.1"/>
+      </physvol>
+      <physvol name="D3D_1_0_1PV0x125beb0">
+        <volumeref ref="D3D_1_0_1LV0x125bdc0"/>
+        <position name="D3D_1_0_1PV0x125beb0_pos" unit="mm" x="-17.1" y="-22.8" z="-17.1"/>
+      </physvol>
+      <physvol name="D3D_2_0_1PV0x125c190">
+        <volumeref ref="D3D_2_0_1LV0x125c0a0"/>
+        <position name="D3D_2_0_1PV0x125c190_pos" unit="mm" x="-5.7" y="-22.8" z="-17.1"/>
+      </physvol>
+      <physvol name="D3D_3_0_1PV0x125c490">
+        <volumeref ref="D3D_3_0_1LV0x125c3e0"/>
+        <position name="D3D_3_0_1PV0x125c490_pos" unit="mm" x="5.7" y="-22.8" z="-17.1"/>
+      </physvol>
+      <physvol name="D3D_0_0_2PV0x125c790">
+        <volumeref ref="D3D_0_0_2LV0x125c6a0"/>
+        <position name="D3D_0_0_2PV0x125c790_pos" unit="mm" x="-22.8" y="-22.8" z="-28.5"/>
+      </physvol>
+      <physvol name="D3D_1_0_2PV0x125ca70">
+        <volumeref ref="D3D_1_0_2LV0x125c980"/>
+        <position name="D3D_1_0_2PV0x125ca70_pos" unit="mm" x="-11.4" y="-22.8" z="-28.5"/>
+      </physvol>
+      <physvol name="D3D_2_0_2PV0x125cde0">
+        <volumeref ref="D3D_2_0_2LV0x125ccf0"/>
+        <position name="D3D_2_0_2PV0x125cde0_pos" unit="mm" x="8.88178419700125e-16" y="-22.8" z="-28.5"/>
+      </physvol>
+      <physvol name="D3D_3_0_2PV0x125d150">
+        <volumeref ref="D3D_3_0_2LV0x125d060"/>
+        <position name="D3D_3_0_2PV0x125d150_pos" unit="mm" x="11.4" y="-22.8" z="-28.5"/>
+      </physvol>
+      <physvol name="D3D_0_0_3PV0x125d430">
+        <volumeref ref="D3D_0_0_3LV0x125d340"/>
+        <position name="D3D_0_0_3PV0x125d430_pos" unit="mm" x="-28.5" y="-22.8" z="-39.9"/>
+      </physvol>
+      <physvol name="D3D_1_0_3PV0x125d710">
+        <volumeref ref="D3D_1_0_3LV0x125d620"/>
+        <position name="D3D_1_0_3PV0x125d710_pos" unit="mm" x="-17.1" y="-22.8" z="-39.9"/>
+      </physvol>
+      <physvol name="D3D_2_0_3PV0x125d9f0">
+        <volumeref ref="D3D_2_0_3LV0x125d900"/>
+        <position name="D3D_2_0_3PV0x125d9f0_pos" unit="mm" x="-5.7" y="-22.8" z="-39.9"/>
+      </physvol>
+      <physvol name="D3D_3_0_3PV0x125dcd0">
+        <volumeref ref="D3D_3_0_3LV0x125dc20"/>
+        <position name="D3D_3_0_3PV0x125dcd0_pos" unit="mm" x="5.7" y="-22.8" z="-39.9"/>
+      </physvol>
+      <physvol name="D3D_0_0_4PV0x125dfb0">
+        <volumeref ref="D3D_0_0_4LV0x125dec0"/>
+        <position name="D3D_0_0_4PV0x125dfb0_pos" unit="mm" x="-22.8" y="-22.8" z="-51.3"/>
+      </physvol>
+      <physvol name="D3D_2_0_4PV0x125e290">
+        <volumeref ref="D3D_2_0_4LV0x125e1a0"/>
+        <position name="D3D_2_0_4PV0x125e290_pos" unit="mm" x="8.88178419700125e-16" y="-22.8" z="-51.3"/>
+      </physvol>
+      <physvol name="D3D_1_0_0PV0x125ec50">
+        <volumeref ref="D3D_1_0_0LV0x125eba0"/>
+        <position name="D3D_1_0_0PV0x125ec50_pos" unit="mm" x="-5.7" y="-11.4" z="-5.7"/>
+      </physvol>
+      <physvol name="D3D_3_0_0PV0x125efd0">
+        <volumeref ref="D3D_3_0_0LV0x125ef20"/>
+        <position name="D3D_3_0_0PV0x125efd0_pos" unit="mm" x="17.1" y="-11.4" z="-5.7"/>
+      </physvol>
+      <physvol name="D3D_0_0_1PV0x125f300">
+        <volumeref ref="D3D_0_0_1LV0x125f210"/>
+        <position name="D3D_0_0_1PV0x125f300_pos" unit="mm" x="-22.8" y="-11.4" z="-17.1"/>
+      </physvol>
+      <physvol name="D3D_1_0_1PV0x125f610">
+        <volumeref ref="D3D_1_0_1LV0x125f520"/>
+        <position name="D3D_1_0_1PV0x125f610_pos" unit="mm" x="-11.4" y="-11.4" z="-17.1"/>
+      </physvol>
+      <physvol name="D3D_2_0_1PV0x125f8f0">
+        <volumeref ref="D3D_2_0_1LV0x125f840"/>
+        <position name="D3D_2_0_1PV0x125f8f0_pos" unit="mm" x="0" y="-11.4" z="-17.1"/>
+      </physvol>
+      <physvol name="D3D_3_0_1PV0x125fbf0">
+        <volumeref ref="D3D_3_0_1LV0x125fb00"/>
+        <position name="D3D_3_0_1PV0x125fbf0_pos" unit="mm" x="11.4" y="-11.4" z="-17.1"/>
+      </physvol>
+      <physvol name="D3D_0_0_2PV0x125fed0">
+        <volumeref ref="D3D_0_0_2LV0x125fde0"/>
+        <position name="D3D_0_0_2PV0x125fed0_pos" unit="mm" x="-17.1" y="-11.4" z="-28.5"/>
+      </physvol>
+      <physvol name="D3D_1_0_2PV0x12601b0">
+        <volumeref ref="D3D_1_0_2LV0x12600c0"/>
+        <position name="D3D_1_0_2PV0x12601b0_pos" unit="mm" x="-5.7" y="-11.4" z="-28.5"/>
+      </physvol>
+      <physvol name="D3D_2_0_2PV0x1260520">
+        <volumeref ref="D3D_2_0_2LV0x1260470"/>
+        <position name="D3D_2_0_2PV0x1260520_pos" unit="mm" x="5.7" y="-11.4" z="-28.5"/>
+      </physvol>
+      <physvol name="D3D_3_0_2PV0x1260800">
+        <volumeref ref="D3D_3_0_2LV0x1260710"/>
+        <position name="D3D_3_0_2PV0x1260800_pos" unit="mm" x="17.1" y="-11.4" z="-28.5"/>
+      </physvol>
+      <physvol name="D3D_0_0_3PV0x1260ae0">
+        <volumeref ref="D3D_0_0_3LV0x12609f0"/>
+        <position name="D3D_0_0_3PV0x1260ae0_pos" unit="mm" x="-22.8" y="-11.4" z="-39.9"/>
+      </physvol>
+      <physvol name="D3D_1_0_3PV0x1260dc0">
+        <volumeref ref="D3D_1_0_3LV0x1260cd0"/>
+        <position name="D3D_1_0_3PV0x1260dc0_pos" unit="mm" x="-11.4" y="-11.4" z="-39.9"/>
+      </physvol>
+      <physvol name="D3D_2_0_3PV0x12610a0">
+        <volumeref ref="D3D_2_0_3LV0x1260ff0"/>
+        <position name="D3D_2_0_3PV0x12610a0_pos" unit="mm" x="0" y="-11.4" z="-39.9"/>
+      </physvol>
+      <physvol name="D3D_3_0_3PV0x1261380">
+        <volumeref ref="D3D_3_0_3LV0x1261290"/>
+        <position name="D3D_3_0_3PV0x1261380_pos" unit="mm" x="11.4" y="-11.4" z="-39.9"/>
+      </physvol>
+      <physvol name="D3D_0_0_4PV0x1261660">
+        <volumeref ref="D3D_0_0_4LV0x1261570"/>
+        <position name="D3D_0_0_4PV0x1261660_pos" unit="mm" x="-17.1" y="-11.4" z="-51.3"/>
+      </physvol>
+      <physvol name="D3D_2_0_4PV0x1261940">
+        <volumeref ref="D3D_2_0_4LV0x1261890"/>
+        <position name="D3D_2_0_4PV0x1261940_pos" unit="mm" x="5.7" y="-11.4" z="-51.3"/>
+      </physvol>
+      <physvol name="D3D_1_0_0PV0x1262360">
+        <volumeref ref="D3D_1_0_0LV0x12622b0"/>
+        <position name="D3D_1_0_0PV0x1262360_pos" unit="mm" x="-11.4" y="0" z="-11.4"/>
+      </physvol>
+      <physvol name="D3D_3_0_0PV0x125ed20">
+        <volumeref ref="D3D_3_0_0LV0x1262730"/>
+        <position name="D3D_3_0_0PV0x125ed20_pos" unit="mm" x="11.4" y="0" z="-11.4"/>
+      </physvol>
+      <physvol name="D3D_0_0_1PV0x1262a20">
+        <volumeref ref="D3D_0_0_1LV0x1262970"/>
+        <position name="D3D_0_0_1PV0x1262a20_pos" unit="mm" x="-28.5" y="0" z="-22.8"/>
+      </physvol>
+      <physvol name="D3D_1_0_1PV0x1262d30">
+        <volumeref ref="D3D_1_0_1LV0x1262c80"/>
+        <position name="D3D_1_0_1PV0x1262d30_pos" unit="mm" x="-17.1" y="0" z="-22.8"/>
+      </physvol>
+      <physvol name="D3D_2_0_1PV0x1263060">
+        <volumeref ref="D3D_2_0_1LV0x1262fb0"/>
+        <position name="D3D_2_0_1PV0x1263060_pos" unit="mm" x="-5.7" y="0" z="-22.8"/>
+      </physvol>
+      <physvol name="D3D_3_0_1PV0x1263310">
+        <volumeref ref="D3D_3_0_1LV0x1263260"/>
+        <position name="D3D_3_0_1PV0x1263310_pos" unit="mm" x="5.7" y="0" z="-22.8"/>
+      </physvol>
+      <physvol name="D3D_0_0_2PV0x12635f0">
+        <volumeref ref="D3D_0_0_2LV0x1263540"/>
+        <position name="D3D_0_0_2PV0x12635f0_pos" unit="mm" x="-22.8" y="0" z="-34.2"/>
+      </physvol>
+      <physvol name="D3D_1_0_2PV0x12638d0">
+        <volumeref ref="D3D_1_0_2LV0x1263820"/>
+        <position name="D3D_1_0_2PV0x12638d0_pos" unit="mm" x="-11.4" y="0" z="-34.2"/>
+      </physvol>
+      <physvol name="D3D_2_0_2PV0x1263c90">
+        <volumeref ref="D3D_2_0_2LV0x1263ba0"/>
+        <position name="D3D_2_0_2PV0x1263c90_pos" unit="mm" x="8.88178419700125e-16" y="0" z="-34.2"/>
+      </physvol>
+      <physvol name="D3D_3_0_2PV0x1263f70">
+        <volumeref ref="D3D_3_0_2LV0x1263ec0"/>
+        <position name="D3D_3_0_2PV0x1263f70_pos" unit="mm" x="11.4" y="0" z="-34.2"/>
+      </physvol>
+      <physvol name="D3D_0_0_3PV0x1264250">
+        <volumeref ref="D3D_0_0_3LV0x12641a0"/>
+        <position name="D3D_0_0_3PV0x1264250_pos" unit="mm" x="-28.5" y="0" z="-45.6"/>
+      </physvol>
+      <physvol name="D3D_1_0_3PV0x1264530">
+        <volumeref ref="D3D_1_0_3LV0x1264480"/>
+        <position name="D3D_1_0_3PV0x1264530_pos" unit="mm" x="-17.1" y="0" z="-45.6"/>
+      </physvol>
+      <physvol name="D3D_2_0_3PV0x1264810">
+        <volumeref ref="D3D_2_0_3LV0x1264760"/>
+        <position name="D3D_2_0_3PV0x1264810_pos" unit="mm" x="-5.7" y="0" z="-45.6"/>
+      </physvol>
+      <physvol name="D3D_3_0_3PV0x1264af0">
+        <volumeref ref="D3D_3_0_3LV0x1264a40"/>
+        <position name="D3D_3_0_3PV0x1264af0_pos" unit="mm" x="5.7" y="0" z="-45.6"/>
+      </physvol>
+      <physvol name="D3D_0_0_4PV0x1264dd0">
+        <volumeref ref="D3D_0_0_4LV0x1264d20"/>
+        <position name="D3D_0_0_4PV0x1264dd0_pos" unit="mm" x="-22.8" y="0" z="-57"/>
+      </physvol>
+      <physvol name="D3D_2_0_4PV0x12650b0">
+        <volumeref ref="D3D_2_0_4LV0x1264fc0"/>
+        <position name="D3D_2_0_4PV0x12650b0_pos" unit="mm" x="8.88178419700125e-16" y="0" z="-57"/>
+      </physvol>
+      <physvol name="D3D_1_0_0PV0x1265ae0">
+        <volumeref ref="D3D_1_0_0LV0x1265a30"/>
+        <position name="D3D_1_0_0PV0x1265ae0_pos" unit="mm" x="-5.7" y="11.4" z="-11.4"/>
+      </physvol>
+      <physvol name="D3D_3_0_0PV0x1265dc0">
+        <volumeref ref="D3D_3_0_0LV0x1265d10"/>
+        <position name="D3D_3_0_0PV0x1265dc0_pos" unit="mm" x="17.1" y="11.4" z="-11.4"/>
+      </physvol>
+      <physvol name="D3D_0_0_1PV0x12660f0">
+        <volumeref ref="D3D_0_0_1LV0x1266000"/>
+        <position name="D3D_0_0_1PV0x12660f0_pos" unit="mm" x="-22.8" y="11.4" z="-22.8"/>
+      </physvol>
+      <physvol name="D3D_1_0_1PV0x1266400">
+        <volumeref ref="D3D_1_0_1LV0x1266310"/>
+        <position name="D3D_1_0_1PV0x1266400_pos" unit="mm" x="-11.4" y="11.4" z="-22.8"/>
+      </physvol>
+      <physvol name="D3D_2_0_1PV0x12666e0">
+        <volumeref ref="D3D_2_0_1LV0x1266630"/>
+        <position name="D3D_2_0_1PV0x12666e0_pos" unit="mm" x="0" y="11.4" z="-22.8"/>
+      </physvol>
+      <physvol name="D3D_3_0_1PV0x1266990">
+        <volumeref ref="D3D_3_0_1LV0x12668e0"/>
+        <position name="D3D_3_0_1PV0x1266990_pos" unit="mm" x="11.4" y="11.4" z="-22.8"/>
+      </physvol>
+      <physvol name="D3D_0_0_2PV0x1266cc0">
+        <volumeref ref="D3D_0_0_2LV0x1266bd0"/>
+        <position name="D3D_0_0_2PV0x1266cc0_pos" unit="mm" x="-17.1" y="11.4" z="-34.2"/>
+      </physvol>
+      <physvol name="D3D_1_0_2PV0x1266fa0">
+        <volumeref ref="D3D_1_0_2LV0x1266ef0"/>
+        <position name="D3D_1_0_2PV0x1266fa0_pos" unit="mm" x="-5.7" y="11.4" z="-34.2"/>
+      </physvol>
+      <physvol name="D3D_2_0_2PV0x1267310">
+        <volumeref ref="D3D_2_0_2LV0x1267260"/>
+        <position name="D3D_2_0_2PV0x1267310_pos" unit="mm" x="5.7" y="11.4" z="-34.2"/>
+      </physvol>
+      <physvol name="D3D_3_0_2PV0x12675f0">
+        <volumeref ref="D3D_3_0_2LV0x1267540"/>
+        <position name="D3D_3_0_2PV0x12675f0_pos" unit="mm" x="17.1" y="11.4" z="-34.2"/>
+      </physvol>
+      <physvol name="D3D_0_0_3PV0x12678d0">
+        <volumeref ref="D3D_0_0_3LV0x12677e0"/>
+        <position name="D3D_0_0_3PV0x12678d0_pos" unit="mm" x="-22.8" y="11.4" z="-45.6"/>
+      </physvol>
+      <physvol name="D3D_1_0_3PV0x1267bb0">
+        <volumeref ref="D3D_1_0_3LV0x1267ac0"/>
+        <position name="D3D_1_0_3PV0x1267bb0_pos" unit="mm" x="-11.4" y="11.4" z="-45.6"/>
+      </physvol>
+      <physvol name="D3D_2_0_3PV0x1267e90">
+        <volumeref ref="D3D_2_0_3LV0x1267de0"/>
+        <position name="D3D_2_0_3PV0x1267e90_pos" unit="mm" x="0" y="11.4" z="-45.6"/>
+      </physvol>
+      <physvol name="D3D_3_0_3PV0x1268170">
+        <volumeref ref="D3D_3_0_3LV0x12680c0"/>
+        <position name="D3D_3_0_3PV0x1268170_pos" unit="mm" x="11.4" y="11.4" z="-45.6"/>
+      </physvol>
+      <physvol name="D3D_0_0_4PV0x1268450">
+        <volumeref ref="D3D_0_0_4LV0x12683a0"/>
+        <position name="D3D_0_0_4PV0x1268450_pos" unit="mm" x="-17.1" y="11.4" z="-57"/>
+      </physvol>
+      <physvol name="D3D_2_0_4PV0x1268730">
+        <volumeref ref="D3D_2_0_4LV0x1268680"/>
+        <position name="D3D_2_0_4PV0x1268730_pos" unit="mm" x="5.7" y="11.4" z="-57"/>
+      </physvol>
+    </volume>
+  </structure>
+
+  <setup name="Default" version="1.0">
+    <world ref="worldL0x124f560"/>
+  </setup>
+
+</gdml>
